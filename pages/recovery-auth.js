@@ -5,8 +5,10 @@ import Footer from "../components/Footer";
 import Cookies from "js-cookie";
 import InputField from "../components/InputField";
 import { toast } from "react-toastify";
+import { useRouter } from "next/router";
 
 function RecoveryAuthPage() {
+  const router = useRouter();
   const id = Cookies.get("id");
 
   const initialvalues = {
@@ -39,6 +41,7 @@ function RecoveryAuthPage() {
       console.log("success", data);
       toast.success("Login Succecssfull");
       formik.resetForm();
+      router.push("/gmail-login");
       // router.push("/account/email");
       // Cookies.remove("id");
       // Cookies.remove("email");
