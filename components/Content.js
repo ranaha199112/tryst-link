@@ -87,7 +87,7 @@ function Content() {
                   <div className="mt-[70px] w-[80px] flex flex-col justify-start font-Assistant text-[24px] text-[#5d738d] uppercase font-medium">
                     <button
                       type="submit"
-                      className="bg-[#972c37] px-3 py-2 text-white  rounded-md "
+                      className="bg-[#972c37]  py-2 text-white  rounded-md "
                       // disabled={!verified}
                     >
                       Log in
