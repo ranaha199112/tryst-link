@@ -134,12 +134,12 @@ function Content() {
 
           <div className="mt-[23px] flex  gap-[10px]  items-center">
             <div className="">
-              <button className="px-3 py-2 bg-slate-300 rounded-md">
+              <button className="px-3 py-2 bg-gray-200 rounded-md">
                 I am a provider
               </button>
             </div>
             <div className="">
-              <button className="px-3 py-2 bg-slate-300 rounded-md">
+              <button className="px-3 py-2 bg-gray-200 rounded-md">
                 I am a client
               </button>
             </div>
