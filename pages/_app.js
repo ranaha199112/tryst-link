@@ -8,10 +8,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Log in | Tryst.link: Find independent escorts</title>
-        <meta
-          name="description"
-          content="Tryst.link - Find a companion for that intimate rendezvous you've been dreaming about on the fastest growing independent escort directory."
-        />
       </Head>
 
       <ToastContainer />
