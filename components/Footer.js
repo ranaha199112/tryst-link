@@ -14,7 +14,7 @@ function Footer() {
               alt="logo"
             />
             <img
-              className="w-[155px] lg:w-[225px] h-auto"
+              className="w-[155px]  h-auto pt-5"
               src="/images/logo6.svg"
               class="w-40 ml-4 lg:ml-0"
               alt="logo"
