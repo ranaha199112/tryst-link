@@ -20,7 +20,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <div className="hidden  lg:block lg:text-[18px] text-white pr-20 pt-5">
+      <div className="hidden  lg:block lg:text-[18px] text-white pr-20 pt-3">
         {" "}
         Login<span className="text-sm pl-2">or</span> Sign up
       </div>

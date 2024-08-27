@@ -87,7 +87,7 @@ function Content() {
                   <div className="mt-[70px] flex flex-col items-center font-Assistant text-[24px] text-[#5d738d] uppercase font-medium">
                     <button
                       type="submit"
-                      className="btn"
+                      className="bg-[#972c37] px-1 py-3 text-white "
                       // disabled={!verified}
                     >
                       Log in
@@ -96,15 +96,20 @@ function Content() {
                 </Form>
               )}
             </Formik>
-            <div className="mt-[70px] text-base text-[#5d738d] uppercase font-medium flex flex-col items-center px-[22px] lg:px-0">
+            <div className="mt-[50px] text-base text-[#5d738d]  flex justify-start flex-col items-center px-[22px] lg:px-0">
               <div className="">
-                <button className="bg-white hover:bg-custom-rose text-custom-rose hover:text-white border-2 border-custom-rose px-[18px] py-[2px] lg:py-[5px] rounded-full active:scale-90  transition duration-300">
+                <button className="px-3 py-2 bg-gray-200 rounded-md focus:bg-gray-400">
                   Forgot your password?
                 </button>
               </div>
-              <div className="mt-3">
-                <button className=" bg-white hover:bg-custom-rose text-custom-rose hover:text-white border-2 border-custom-rose px-[14px] lg:px-[18px] py-[2px] lg:py-[5px] rounded-full active:scale-90 transition duration-300">
-                  {`Didn't receive confirmation instructions?`}
+              <div className="mt-1">
+                <button className="px-3 py-2 bg-gray-200 rounded-md focus:bg-gray-400">
+                  Didn't receive confirmation instructions?
+                </button>
+              </div>
+              <div className="mt-1">
+                <button className="px-3 py-2 bg-gray-200 rounded-md focus:bg-gray-400">
+                  I need help recovering access to my account
                 </button>
               </div>
             </div>
