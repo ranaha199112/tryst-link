@@ -35,10 +35,9 @@ function Content() {
       <div className=" grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[65px] text-custom-gray3">
         <div>
           <div>
-            <h1 className="font-Assistant text-[26px] lg:text-[44px]  font-extrabold">
+            <h1 className="font-Assistant text-[26px] lg:text-[34px]  font-extrabold">
               Log in
             </h1>
-            <div className="bg-custom-red h-[5px] w-[80px] rounded-xl"></div>
           </div>
 
           <div className="mt-[20px] lg:mt-[27px]">
@@ -49,7 +48,7 @@ function Content() {
             >
               {(formik) => (
                 <Form className="">
-                  <div className="space-y-[60px]">
+                  <div className="space-y-[40px]">
                     <InputField
                       label="Email Address"
                       id="email"
@@ -113,10 +112,9 @@ function Content() {
         </div>
         <div>
           <div>
-            <h1 className="font-Assistant text-[26px] lg:text-[44px]  font-extrabold">
+            <h1 className="font-Assistant text-[26px] lg:text-[34px]  font-extrabold">
               Sign up
             </h1>
-            <div className="bg-custom-red h-[5px] w-[80px] rounded-xl"></div>
           </div>
 
           <div className="mt-3 text-[15px] space-y-5">
