@@ -5,8 +5,8 @@ import { GoSearch } from "react-icons/go";
 
 function Header() {
   return (
-    <div className="sticky top-0 w-full bg-custom-gray3">
-      <div className=" px-5 lg:px-[30px] py-[10px]  flex justify-between lg:justify-end lg:gap-[100px] items-center text-white font-OpenSans">
+    <div className="sticky top-0 w-full bg-custom-gray3 flex float-end">
+      <div className=" px-5 lg:px-[30px] py-[10px]  flex justify-between lg:justify-start lg:gap-[100px] items-center text-white font-OpenSans">
         <div className="w-[120px] h-auto">
           <Image src={Logo} alt="logo" />
         </div>
@@ -18,11 +18,11 @@ function Header() {
             </span>
             Search
           </div>
-          <div className="hidden  lg:block lg:text-[20px]">
-            {" "}
-            Login<span className="text-sm">or</span> Sign up
-          </div>
         </div>
+      </div>
+      <div className="hidden  lg:block lg:text-[16px]">
+        {" "}
+        Login<span className="text-sm pl-2">or</span> Sign up
       </div>
     </div>
   );
