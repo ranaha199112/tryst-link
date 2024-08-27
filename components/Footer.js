@@ -6,9 +6,19 @@ function Footer() {
     <>
       <footer class="bg-gray-900 text-white pt-12 pb-8 px-4">
         <div class="mx-auto px-4 container overflow-hidden flex flex-col lg:flex-row justify-between">
-          <div class="flex ">
-            <img src="/images/logo3.png" class="w-40 ml-4 lg:ml-0" alt="logo" />
-            <img src="/images/logo4.png" class="w-40 ml-4 lg:ml-0" alt="logo" />
+          <div class="flex flex-col">
+            <img
+              className="w-[155px] lg:w-[225px] h-auto"
+              src="/images/logo2.png"
+              class="w-40 ml-4 lg:ml-0"
+              alt="logo"
+            />
+            <img
+              className="w-[155px] lg:w-[225px] h-auto"
+              src="/images/logo6.png"
+              class="w-40 ml-4 lg:ml-0"
+              alt="logo"
+            />
           </div>
           <div class="w-2/3 block sm:flex text-sm mt-6 lg:mt-0">
             <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left w-full">
