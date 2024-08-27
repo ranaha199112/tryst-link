@@ -15,7 +15,7 @@ function Footer() {
             />
             <img
               className="w-[155px] lg:w-[225px] h-auto"
-              src="/images/logo6.png"
+              src="/images/logo6.svg"
               class="w-40 ml-4 lg:ml-0"
               alt="logo"
             />
@@ -155,7 +155,7 @@ function Footer() {
         </div>
         <div class="pt-4 mt-4 pt-6 text-gray-600 border-t border-gray-800 text-center">
           {" "}
-          © 2019 WeTeach. All rights reserved.
+          © 2018-2024 All rights reserved.
         </div>
       </footer>
     </>
