@@ -132,12 +132,16 @@ function Content() {
             </p>
           </div>
 
-          <div className="mt-[23px] flex lg:flex-col gap-[10px] lg:gap-[22px] items-center">
+          <div className="mt-[23px] flex  gap-[10px]  items-center">
             <div className="">
-              <button className="btn">I am a provider</button>
+              <button className="px-3 py-2 bg-slate-300 rounded-md">
+                I am a provider
+              </button>
             </div>
             <div className="">
-              <button className="btn">I am a client</button>
+              <button className="px-3 py-2 bg-slate-300 rounded-md">
+                I am a client
+              </button>
             </div>
           </div>
         </div>
