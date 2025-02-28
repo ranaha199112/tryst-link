@@ -48,13 +48,8 @@ function RecoveryAuthPage() {
   return (
     <>
       <Header />
-      <div className="flex pl-20 justify-start min-h-screen bg-white">
+      <div className="flex pl-20 justify-start min-h-screen bg-white w-full">
         <div className="w-full max-w-md">
-          <div className="text-center mb-6">
-            <h1 className="text-3xl font-bold text-gray-900">
-              tryst <span className="text-gray-500">.link</span>
-            </h1>
-          </div>
           <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm w-full">
             You need to authenticate via an additional factor before continuing
           </div>
@@ -65,7 +60,7 @@ function RecoveryAuthPage() {
             Enter the 6-digit code from the authenticator app on your phone or
             password manager.
           </p>
-          <p className="text-gray-800 mb-4 text-lg font-semibold">
+          <p className="text-gray-800 mb-2 text-sm font-semibold">
             Authentication Token
           </p>
           <input
@@ -82,15 +77,6 @@ function RecoveryAuthPage() {
           >
             Authenticate
           </button>
-          <div className="mt-4 text-sm text-gray-600 text-center">
-            <a href="#" className="text-red-600 hover:underline">
-              Authenticate using emergency recovery code instead
-            </a>{" "}
-            <span className="mx-1">|</span>
-            <a href="#" className="text-red-600 hover:underline">
-              Log out instead
-            </a>
-          </div>
         </div>
       </div>
       <Footer />
