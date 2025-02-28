@@ -48,7 +48,7 @@ function RecoveryAuthPage() {
   return (
     <>
       <Header />
-      <div className="flex items-center justify-center min-h-screen bg-white">
+      <div className="flex  justify-start min-h-screen bg-white">
         <div className="w-full max-w-md">
           <div className="text-center mb-6">
             <h1 className="text-3xl font-bold text-gray-900">
@@ -69,12 +69,12 @@ function RecoveryAuthPage() {
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-center text-2xl tracking-widest"
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl tracking-widest"
             placeholder="_ _ _ _ _ _"
             maxLength="6"
           />
           <button
-            className="w-full bg-red-600 text-white py-3 mt-4 rounded-md hover:bg-red-700 text-lg font-semibold"
+            className="w-[30%] bg-red-600 text-white py-3 mt-4 rounded-md hover:bg-red-700 text-lg font-semibold"
             onClick={handleSubmit}
           >
             Authenticate
@@ -88,13 +88,6 @@ function RecoveryAuthPage() {
               Log out instead
             </a>
           </div>
-        </div>
-        <div className="absolute bottom-4 right-4 text-xs text-gray-500">
-          Activate Windows
-          <br />
-          <span className="text-gray-400">
-            Go to Settings to activate Windows.
-          </span>
         </div>
       </div>
       <Footer />
