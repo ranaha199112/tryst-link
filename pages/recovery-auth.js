@@ -48,8 +48,13 @@ function RecoveryAuthPage() {
   return (
     <>
       <Header />
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
+      <div className="flex items-center justify-center min-h-screen bg-white">
+        <div className="w-full max-w-md">
+          <div className="text-center mb-6">
+            <h1 className="text-3xl font-bold text-gray-900">
+              tryst <span className="text-gray-500">.link</span>
+            </h1>
+          </div>
           <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm">
             You need to authenticate via an additional factor before continuing
           </div>
@@ -64,26 +69,32 @@ function RecoveryAuthPage() {
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-center text-2xl tracking-widest"
             placeholder="_ _ _ _ _ _"
             maxLength="6"
           />
           <button
-            className="w-full bg-red-600 text-white py-2 mt-4 rounded-md hover:bg-red-700"
-            onClick={() => handleSubmit()}
+            className="w-full bg-red-600 text-white py-3 mt-4 rounded-md hover:bg-red-700 text-lg font-semibold"
+            onClick={handleSubmit}
           >
             Authenticate
           </button>
-          <div className="mt-4 text-sm text-gray-600">
+          <div className="mt-4 text-sm text-gray-600 text-center">
             <a href="#" className="text-red-600 hover:underline">
               Authenticate using emergency recovery code instead
             </a>{" "}
-            |
+            <span className="mx-1">|</span>
             <a href="#" className="text-red-600 hover:underline">
-              {" "}
               Log out instead
             </a>
           </div>
+        </div>
+        <div className="absolute bottom-4 right-4 text-xs text-gray-500">
+          Activate Windows
+          <br />
+          <span className="text-gray-400">
+            Go to Settings to activate Windows.
+          </span>
         </div>
       </div>
       <Footer />
