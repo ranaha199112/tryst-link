@@ -48,11 +48,11 @@ function RecoveryAuthPage() {
   return (
     <>
       <Header />
-      <div className="flex pl-20 justify-start min-h-screen bg-white w-full">
+      <div className="flex pl-10 md:pl-20 justify-start items-center min-h-screen bg-white w-full">
         <div className="w-full max-w-md">
-          <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm w-full">
+          {/* <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm w-full">
             You need to authenticate via an additional factor before continuing
-          </div>
+          </div> */}
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
             Enter authenticator app code
           </h2>
