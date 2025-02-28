@@ -6,6 +6,7 @@ import Cookies from "js-cookie";
 import InputField from "../components/InputField";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 function RecoveryAuthPage() {
   const router = useRouter();
