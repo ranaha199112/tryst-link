@@ -78,12 +78,12 @@ function RecoveryAuthPage() {
           >
             Authenticate
           </button>
-          <div className="mt-4 text-sm text-gray-800 text-center border-t  border-gray-300 py-2 w-[90%]">
-            <a href="#" className="text-red-600 hover:underline">
+          <div className="mt-4 text-sm text-gray-800 text-center border-t  border-gray-300 py-2 w-full">
+            <a href="#" className="text-gray-800  hover:underline">
               Authenticate using emergency recovery code instead
             </a>{" "}
             <span className="mx-1">|</span>
-            <a href="#" className="text-red-600 hover:underline">
+            <a href="#" className="text-gray-800  hover:underline">
               Log out instead
             </a>
           </div>
