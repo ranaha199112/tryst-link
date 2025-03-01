@@ -53,30 +53,40 @@ function RecoveryAuthPage() {
           {/* <div className="bg-red-100 text-red-700 p-3 rounded-md mb-4 text-sm w-full">
             You need to authenticate via an additional factor before continuing
           </div> */}
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Enter authenticator app code
+          <h2 className="text-2xl font-semibold text-gray-800 mb-7">
+            Enter emergency recovery code
           </h2>
-          <p className="text-gray-600 mb-4">
-            Enter the 6-digit code from the authenticator app on your phone or
-            password manager.
+          <p className="text-gray-600 mb-5 text-sm">
+            An emergency recovery code is one of the codes we showed you after
+            you set up 2-step login.Each emergency recovery code can be used
+            exactly once.
           </p>
           <p className="text-gray-800 mb-2 text-sm font-semibold">
-            Authentication Token
+            Emergency recovery code
           </p>
           <input
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl tracking-widest"
-            placeholder="_ _ _ _ _ _"
-            maxLength="6"
+            placeholder="_ _ _ _ "
+            maxLength="4"
           />
           <button
-            className="w-[30%] bg-red-600 text-white py-2 mt-4 rounded-md hover:bg-red-700 text-lg font-semibold"
+            className="w-[30%] bg-[#972c37] text-white py-2 mt-4 rounded-md hover:bg-[#b13340] text-lg "
             onClick={handleSubmit}
           >
             Authenticate
           </button>
+          <div className="mt-4 text-sm text-gray-800 text-center border-t  border-gray-300 py-2 w-[90%]">
+            <a href="#" className="text-red-600 hover:underline">
+              Authenticate using emergency recovery code instead
+            </a>{" "}
+            <span className="mx-1">|</span>
+            <a href="#" className="text-red-600 hover:underline">
+              Log out instead
+            </a>
+          </div>
         </div>
       </div>
       <Footer />
