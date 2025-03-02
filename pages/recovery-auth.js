@@ -70,7 +70,6 @@ function RecoveryAuthPage() {
             onChange={(e) => setCode(e.target.value)}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-start text-2xl tracking-widest"
             placeholder=" __ - __ - __ - __"
-            maxLength="12"
           />
           <button
             className="w-[30%] bg-[#972c37] text-white py-2 mt-4 rounded-md hover:bg-[#b13340] text-lg "
