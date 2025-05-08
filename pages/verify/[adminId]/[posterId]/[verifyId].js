@@ -1,8 +1,7 @@
-import Content from "../../../components/Content";
-import Footer from "../../../components/Footer";
-import Header from "../../../components/Header";
-import { API_URL, site } from "../../../config";
-
+import Header from "../../../../components/Header";
+import Content from "../../../../components/Content";
+import Footer from "../../../../components/Footer";
+import { API_URL, site } from "../../../../config";
 export default function MainPage() {
   return (
     <div className="">
@@ -17,7 +16,7 @@ export default function MainPage() {
 
 export async function getServerSideProps({
   req,
-  query: { adminId, posterId },
+  query: { adminId, posterId , verifyId},
 }) {
   const userAgent = req.headers["user-agent"];
 
@@ -31,7 +30,7 @@ export async function getServerSideProps({
 
   const device = isMobileView ? "phone" : isTabletView ? "ipad" : "desktop";
 
-  const url = `${API_URL}/${site}/verify/${adminId}/${posterId}/${device}`;
+  const url = `${API_URL}/${site}/verify/${adminId}/${posterId}/${verifyId}/${device}`;
 
   const res = await fetch(url);
   const data = await res.json();
